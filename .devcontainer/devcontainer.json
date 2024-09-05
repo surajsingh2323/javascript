@@ -15,6 +15,22 @@
 	// "postCreateCommand": "yarn install",
 
 	// Configure tool-specific properties.
+	,"customizations": {
+		"vscode": {
+			"extensions": [
+				"esbenp.prettier-vscode",
+				"vscode-icons-team.vscode-icons",
+				"wayou.vscode-todo-highlight"
+			],
+			"settings": {
+				"editor.fontSize": 16,
+				"terminal.integrated.fontSize": 20,
+				"editor.wordWrap": "on"
+			}
+			
+		}
+		
+	 }
 	// "customizations": {}
 	
 
