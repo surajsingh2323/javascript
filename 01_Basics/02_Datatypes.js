@@ -19,7 +19,7 @@ let state = null
 
 console.log(typeof "Suraj"); // Outputs: string
 console.log(typeof undefined);// undefined
-console.log(typeof null);//object
+console.log(typeof null); //object
 
 
 
