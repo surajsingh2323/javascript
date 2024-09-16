@@ -27,6 +27,28 @@ const myFunction = function(){ // Here,we declared function as a variable.
 }
 
 console.log(typeof id);// this function used to tell type 
+/******************************Memory************************************* */
+// Stack(Primitive,will save copy) , Heap(non-Primitive,will save reference)
+let myName = "Thakur Suraj Singh"
+let anotherName = myName
+anotherName = "Suraj"
+console.log(anotherName);
+console.log(myName);// so original will remain as it is and gives a copy of it that whats happens in Heap
+
+let userOne = {
+    userEmail:"suraj@gmail.com",
+    upi:"user@bcl"
+}
+let userTwo = userOne
+userTwo.userEmail = "user@gmail.com" // to accessing objects we use (varname.property in object that we want to access)  
+
+console.log(userOne.userEmail);
+console.log(userTwo.userEmail);
+// both will gave same value as both taking same reference from memory 
+
+
+
+
 
 
 
