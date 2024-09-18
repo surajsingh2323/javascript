@@ -11,11 +11,11 @@ console.log(gameName.__proto__);// for accessing prototype there are amny syntax
 console.log(gameName.length);
 console.log(gameName.toUpperCase());// use ()at end otherwise it only tell--> function toUppercase and also using stack memory
 console.log(gameName.charAt(2));
-console.log(gameName.indexOf('k'));// if give random character that is not in string it gives (-1), unexcpected results
-const newstring = gameName.substring(0,4)// 4th index will not included; 4 character will print here.and if we gave 
-//negative value here it will ignore it and start from '0';
+console.log(gameName.indexOf('k'));// if give random character that is not in string it gives (-1).
+const newstring = gameName.substring(0,4)// 4th index will not included but 4 characters will print here.
+//this ignores negative values and start from '0';
 console.log(newstring);
-const anotherString = gameName.slice(-7,1)// should only give last index value in negative otherwiswe it will give unexcepted results
+const anotherString = gameName.slice(0,-6)// used to extract specific section in string mention in range ;return '-1' if not found.also negative values for indexing accepted.ex:- (0,-6) -->,6 charcters from '5th' to '0' index <--(reverse order right to left)
 console.log(anotherString);
 const newstringone = "   Suraj  " // sometimes when we make userform for our websites ,user delebrately or unknowingly add some spaces or extra characters like in email etc that we don't want to save for our database, for this we can use '.Trim' method
 console.log(newstringone);
@@ -24,6 +24,7 @@ const Url = "https://Suraj.com/Suraj%20Singh"// browser don't understand spaces 
 console.log(Url.replace("%20","_"));//  will replace (value,with value),now url become usable.
 console.log(Url.includes("suraj"));// tell that value present in string or not
 console.log(gameName.split("_"));// will split string on basis of("given basis"),we did on "_" here
+// note:- check methods applied on changed String value or original String based on memory allocated(Stack,Heap)
 //***************study methods of strings from'mdn'docs,mastering these methods = knowing Strings in js 
 
 
